@@ -25,12 +25,12 @@ def word_substituter(tweet)
   tweetarray.join(" ")
 end
 
-def bulk_tweet_shortener(arrayoftweets)
+def bulk_tweet_shortener(tweet)
   arrayoftweets.each do |tweet|
     puts word_substituter(tweet)
   end
 end
 
-def selective_tweet_shortener(arrayoftweets)
-  bulk_tweet_shortener(arrayoftweets.collect {|tweet| tweet.length > 140})
+def selective_tweet_shortener(tweet)
+  
 end
